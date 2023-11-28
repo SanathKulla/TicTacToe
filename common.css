@@ -1,0 +1,20 @@
+:root {
+  --light-color: linear-gradient(to right,
+  #ec008c,
+  #fc6767);
+  --dark-color: linear-gradient(to bottom, #0c0c0c, #212121);
+  --white-color:#fffafa;
+  --button-font-weight: 650;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  height: 100%;
+  width: 100%;
+}

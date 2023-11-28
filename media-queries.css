@@ -1,0 +1,117 @@
+@media (max-width: 1050px) {
+  :root {
+    --game-area-width: 60vw;
+    --mode-button-font-size: 1.2vw;
+    --button-font-weight: 650;
+    --reset-button-font-size: 1.65vw;
+  }
+}
+@media (max-width: 950px) {
+  :root {
+    --game-area-width: 65vw;
+    --game-text-font-size: 2vw;
+    --header-text-font-size: 3.4vw;
+    --cell-font-size: 380%;
+    --button-font-weight: 650;
+    --reset-button-font-size: 1.8vw;
+  }
+}
+@media (max-width: 850px) {
+  :root {
+    --game-area-width: 70vw;
+    --game-text-font-size: 2.2vw;
+    --header-text-font-size: 3.6vw;
+    --button-font-weight: 700;
+    --reset-button-font-size: 1.9vw;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --game-area-height: 75vw;
+    --header-text-flex: 9 0 0;
+    --mode-button-flex: 1 0 0;
+    --mode-button-font-size: 2vw;
+  }
+}
+@media (max-width: 750px) {
+  :root {
+    --game-area-width: 75vw;
+    --header-text-flex: 8.5 0 0;
+    --mode-button-flex: 1.5 0 0;
+    --game-text-font-size: 2.4vw;
+    --header-text-font-size: 3.8vw;
+    --reset-button-font-size: 2vw;
+  }
+  .main {
+    padding-top: 8vh;
+    align-items: start;
+  }
+}
+@media (max-width: 650px) {
+  :root {
+    --game-area-width: 80vw;
+    --game-text-font-size: 2.6vw;
+    --header-text-font-size: 4vw;
+    --cell-font-size: 350%;
+    --mode-button-font-size: 2.2vw;
+    --button-font-weight: 700;
+    --reset-button-font-size: 2.1vw;
+  }
+  .main {
+    padding-top: 8vh;
+    align-items: start;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --game-area-width: 80vw;
+    --game-area-height: 60vh;
+    --game-info-height: 12%;
+    --gold-back-ground-color: linear-gradient(to bottom, #ca0147, #1e1e1e);
+    --game-text-font-size: 2.8vw;
+    --header-text-font-size: 4.2vw;
+    --cell-font-size: 330%;
+    --reset-button-font-size: 2.2vw;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --game-area-width: 85vw;
+    --game-area-height: 55vh;
+    --game-text-font-size: 3vw;
+    --header-text-font-size: 4.4vw;
+    --mode-button-font-size: 3.2vw;
+    --cell-font-size: 310%;
+    --reset-button-font-size: 2.3vw;
+  }
+  .main {
+    padding-top: 8vh;
+    align-items: start;
+  }
+}
+@media (max-width: 450px) {
+  :root {
+    --game-area-width: 85vw;
+    --game-area-height: 50vh;
+    --game-text-font-size: 3.2vw;
+    --header-text-font-size: 4.6vw;
+    --cell-font-size: 300%;
+    --button-font-weight: 800;
+    --reset-button-font-size: 2.4vw;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --game-area-width: 90vw;
+    --game-area-height: 45vh;
+    --header-text-font-size: 4.8vw;
+    --game-text-font-size: 3.4vw;
+    --cell-font-size: 280%;
+    --reset-button-font-size: 2.7vw;
+  }
+  .main {
+    padding-top: 8vh;
+    align-items: start;
+  }
+}
