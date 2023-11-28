@@ -5,7 +5,7 @@ let cntOfMoves = 0;
 let currentMode = "light";
 
 // winning cominations
-let winningComboniations = [
+const winningComboniations = [
   [0, 1, 2],
   [3, 4, 5],
   [6, 7, 8],
@@ -39,9 +39,8 @@ function changeTurn() {
   return turn === "X" ? "O" : "X";
 }
 
-//events to occur if user clicks on a cell of 9*9 game grid
-cells.forEach((cell) => {
-  cell.addEventListener("click", (e) => {
+//function for game logic
+function gameLogic(e){
     if (e.target.querySelector("span").innerText === "" && !isGameOver) {
       e.target.querySelector("span").innerText = turn;
       let combination = checkWinner();
@@ -67,13 +66,17 @@ cells.forEach((cell) => {
         isGameOver = true;
       }
     }
-  });
+  }
+  
+//events to occur if user clicks on a cell of 9*9 game grid
+cells.forEach((cell) => {
+  cell.addEventListener("click",gameLogic);
 });
 
 let resetbtn = document.querySelector(".reset-button");
 
-// events to occur if user clicks on reset button
-resetbtn.addEventListener("click", () => {
+//fucntion for resetting game board
+const resetGameBoard =  () => {
   cells.forEach((cell) => {
     cell.querySelector("span").innerText = "";
     // these are necessary because we need to change the color of winning blocks back to default
@@ -85,7 +88,10 @@ resetbtn.addEventListener("click", () => {
   isGameOver = false;
   cntOfMoves = 0;
   document.querySelector(".game-text-container").innerText = `${turn} to play`;
-});
+};
+
+// events to occur if user clicks on reset button
+resetbtn.addEventListener("click",resetGameBoard);
 
 let mainBody = document.querySelector(".main");
 let root = document.querySelector(":root");
