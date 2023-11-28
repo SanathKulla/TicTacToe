@@ -67,7 +67,7 @@ function gameLogic(e){
       }
     }
   }
-  
+
 //events to occur if user clicks on a cell of 9*9 game grid
 cells.forEach((cell) => {
   cell.addEventListener("click",gameLogic);
@@ -153,7 +153,8 @@ modeBtn.addEventListener("mousemove", () => {
   modeBtn.style.fontWeight = "700";
 });
 modeBtn.addEventListener("mouseleave", () => {
-  modeBtn.style.background = "white";
+  if (currentMode === "light") modeBtn.style.background = "white";
+  else modeBtn.style.background = "lightgrey";
   modeBtn.style.fontWeight = "400";
 });
 
