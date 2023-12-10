@@ -1,10 +1,11 @@
 :root {
-  --header-height: 8%;
-  --header-text-font-size: 3.2vw;
-  --header-text-flex: 9.3 0 0;
-  --mode-button-flex: 0.7 0 0;
-  --mode-button-font-size: 1vw;
+  --header-height: 6rem;
+  --header-text-font-size: 3.2rem;
+  --header-text-flex: 9.3;
+  --mode-button-flex: 0.7;
+  --mode-button-font-size: 1.8rem;
 }
+
 .header-container {
   height: var(--header-height);
   width: 100%;
@@ -28,7 +29,6 @@
   align-items: center;
   height: 100%;
   flex: var(--mode-button-flex);
-
 }
 .mode-button-container button {
   height: 90%;
