@@ -1,6 +1,6 @@
 @media (max-width: 1050px) {
   html{
-    font-size: 9px;
+    font-size: 10px;
   }
     :root {
     --header-text-flex: 8.5;
@@ -9,7 +9,7 @@
 }
 @media (max-width: 750px) {
   html{
-    font-size: 8px;
+    font-size: 9px;
   }
   .main {
     padding-top: 10rem;
@@ -22,15 +22,10 @@
   --game-info-height:7rem;
   }
   html{
-    font-size: 6px;
+    font-size: 7px;
   }
   .main {
-    padding-top: 15rem;
+    padding-top: 10rem;
     align-items: start;
-  }
-}
-@media (max-width: 400px) {
-  html{
-    font-size: 5px;
   }
 }
