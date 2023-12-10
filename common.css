@@ -14,7 +14,11 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html{
+  font-size : 10px;
+}
 body {
+  min-width: 280px;
   height: 100%;
   width: 100%;
 }
